@@ -69,15 +69,15 @@ You are now ready to get your VCF on! 😁
   * Enable either [MAC Learning](https://williamlam.com/2018/04/native-mac-learning-in-vsphere-6-7-removes-the-need-for-promiscuous-mode-for-nested-esxi.html) or [Promiscuous Mode](https://kb.vmware.com/kb/1004099) on your physical ESXi host networking to ensure proper network connectivity for Nested ESXi workloads
 * Resource Requirements
     * Compute
-        * Ability to provision VMs with up to 8 vCPU (12 vCPU required for Workload Domain deployment)
-        * Ability to provision up to 384 GB of memory
+        * Ability to provision VMs with up to 8 vCPU (12 vCPU required for Management Domain deployment)
+        * Ability to provision up to 408 GB of memory
         * DRS-enabled Cluster (not required but vApp creation will not be possible)
     * Network
         * 1 x Standard or Distributed Portgroup (routable) to deploy all VMs (VCSA, NSX-T Manager & NSX-T Edge)
            * 13 x IP Addresses for Cloud Builder, SDDC Manager, VCSA, ESXi and NSX-T VMs
            * 9 x IP Addresses for Workload Domain Deployment (if applicable) for ESXi, NSX and VCSA
     * Storage
-        * Ability to provision up to 1.25 TB of storage
+        * Ability to provision up to 1.6 TB of storage
 
         **Note:** For detailed requirements, plesae refer to the planning and preparation workbook [here](https://docs.vmware.com/en/VMware-Cloud-Foundation/5.1/vcf-planning-and-preparation-workbook.zip)
 
